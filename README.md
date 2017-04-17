@@ -1,2 +1,2 @@
 # ZxingCodeDemo
-![image](https://github.com/LiaoJianKui/AD0417/zxing.jpg)
+![image](https://github.com/LiaoJianKui/AD0417/raw/master/zxing.jpg)
