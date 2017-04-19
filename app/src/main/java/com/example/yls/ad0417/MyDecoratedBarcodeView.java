@@ -26,10 +26,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Created by Administrator on 2017/4/17.
- */
-
 
 /**
  * Encapsulates BarcodeView, ViewfinderView and status text.

@@ -7,11 +7,9 @@ import android.view.KeyEvent;
 import com.journeyapps.barcodescanner.CaptureManager;
 import com.journeyapps.barcodescanner.DecoratedBarcodeView;
 
-/**
- * Created by Administrator on 2017/4/17.
- */
 
-public class MyCaptureActivity extends AppCompatActivity{
+public class MyCaptureActivity extends AppCompatActivity {
+
     private CaptureManager capture;
     private DecoratedBarcodeView barcodeScannerView;
 
@@ -19,7 +17,7 @@ public class MyCaptureActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        barcodeScannerView = initializeContent();
+        barcodeScannerView =  initializeContent();
 
         capture = new CaptureManager(this, barcodeScannerView);
         capture.initializeFromIntent(getIntent(), savedInstanceState);
@@ -32,8 +30,8 @@ public class MyCaptureActivity extends AppCompatActivity{
      * @return the DecoratedBarcodeView
      */
     protected DecoratedBarcodeView initializeContent() {
-        setContentView(com.google.zxing.client.android.R.layout.zxing_capture);
-        return (DecoratedBarcodeView)findViewById(com.google.zxing.client.android.R.id.zxing_barcode_scanner);
+        setContentView(R.layout.activity_my_capture);
+        return (DecoratedBarcodeView)findViewById(R.id.my_barcode_scanner);
     }
 
     @Override

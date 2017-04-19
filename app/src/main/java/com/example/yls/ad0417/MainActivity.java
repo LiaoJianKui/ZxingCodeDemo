@@ -17,7 +17,6 @@ import com.google.zxing.WriterException;
 import com.google.zxing.client.android.Intents;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
-import com.journeyapps.barcodescanner.CaptureActivity;
 
 import java.io.UnsupportedEncodingException;
 
@@ -65,7 +64,7 @@ private Button btnCreate;
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, CaptureActivity.class);
+                Intent intent=new Intent(MainActivity.this, MyCaptureActivity.class);
                 startActivityForResult(intent,1001);
             }
         });
